@@ -1,0 +1,7 @@
+name: Rob LaFeve
+markdown: redcarpet
+pygments: true
+
+stylus:
+  compress: true
+  path: css/
