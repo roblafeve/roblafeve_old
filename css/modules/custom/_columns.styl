@@ -1,0 +1,42 @@
+.primaryGrid
+.secondaryGrid
+  @extends $grid
+  > *
+    transition all 0.5s ease-in-out
+
+.primaryGrid
+  height 100%
+  z-index -1
+  .centerCol
+    position relative
+    z-index  1
+    overflow auto
+
+.secondaryGrid
+  position fixed
+  z-index 0
+  height 100%
+  top 0
+  bottom 0
+  background url("../images/background.jpg")
+  background-size cover
+  .leftCol
+    z-index 1
+
+.leftCol
+  position relative
+  width 15em
+  @media (max-width: 60em)
+    width 0em
+
+.centerCol
+  width 65%
+  @media (max-width: 60em)
+    width 100%
+  @media (min-width: 100em)
+    width 50%
+
+.rightCol
+  width 5em
+  @media (max-width: 60em)
+    width 0em

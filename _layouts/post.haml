@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
+
 %article
-  %h1 {{ page.title }}
-  / %p {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}
-  {{ content }}
+  {% include post1.html %}
+  %section.content
+    %h1 {{ page.title }}
+    {{ content }}

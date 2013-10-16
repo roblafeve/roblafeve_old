@@ -7,11 +7,23 @@
     %meta{charset: "utf-8"}
     %meta{content: "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %meta{content: "width=device-width", name: "viewport"}
-    %meta{content: "user-scalable=no, width=device-width", name: "viewport"}
+    %meta{content: "user-scalable=no, width=device-width, height=device-height", name: "viewport"}
     %meta{content: "yes", name: "apple-mobile-web-app-capable"}
     %link{href: "/css/main.css", rel: "stylesheet"}
     %link{href: "http://fonts.googleapis.com/css?family=Merriweather:400,700", rel: "stylesheet", type: "text/css"}
   %body
-    %header.main
-    %main
-      {{ content }}
+    .primaryGrid
+      .leftCol
+      %main.centerCol
+        {{ content }}
+      .rightCol
+    .secondaryGrid
+      .leftCol
+        %aside.about
+          {% if page.date %}<p><a href="/">Home</a></p>{%endif%}
+          %img.avatar{ src: "{{site.url}}/images/rob_lafeve.jpg"}
+          %p Rob lives in Kansas City and works at Cremalab.
+      .centerCol
+      .rightCol
+        %aside.postMeta
+          {% if page.date %}<p>{{ page.date | date: "%b %-d %Y" }}</p>{%endif%}
