@@ -19,8 +19,8 @@ namespace :site do
   end
 
 
-  desc "Generate and publish blog to gh-pages"
-  task :publish => [:generate] do
+  desc "Generate and deploy blog to gh-pages"
+  task :deploy => [:generate] do
     Dir.mktmpdir do |tmp|
       cp_r "_site/.", tmp
       Dir.chdir tmp
