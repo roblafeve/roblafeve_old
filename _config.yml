@@ -2,6 +2,8 @@ name: Rob LaFeve
 markdown: redcarpet
 pygments: true
 permalink: pretty
+baseurl: /roblafeve
+exclude: [ Gemfile, Gemfile.lock, Rakefile, README.md ]
 
 stylus:
   compress: true

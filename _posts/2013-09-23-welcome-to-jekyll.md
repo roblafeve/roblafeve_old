@@ -4,7 +4,7 @@ banner: modicum_grid.html
 title:  "Modicum Grid"
 author: "Rob LaFeve"
 date:   2013-09-23 22:40:53
-categories: jekyll update
+categories: 
 ---
 
 Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas sed diam eget risus varius blandit sit amet non magna.

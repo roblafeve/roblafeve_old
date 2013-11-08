@@ -6,5 +6,5 @@ title: Your New Jekyll Site
 
 <h1>Blog Posts</h1>
 {% for post in site.posts %}
-<a href="{{ post.url }}">{% include {{post.banner}} %}</a>
+<a href="{{ site.url }}{{ post.url }}">{% include {{post.banner}} %}</a>
 {% endfor %}
