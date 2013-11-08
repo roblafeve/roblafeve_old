@@ -9,7 +9,7 @@
     %meta{content: "width=device-width", name: "viewport"}
     %meta{content: "user-scalable=no, width=device-width, height=device-height", name: "viewport"}
     %meta{content: "yes", name: "apple-mobile-web-app-capable"}
-    %link{href: "/css/main.css", rel: "stylesheet"}
+    %link{href: "/css/main.css", rel: "stylesheet", type: "text/css"}
     %link{href: "http://fonts.googleapis.com/css?family=Merriweather:400,700", rel: "stylesheet", type: "text/css"}
   %body
     .primaryGrid
@@ -23,6 +23,13 @@
           {% if page.date %}<p><a href="/">Home</a></p>{%endif%}
           %img.avatar{ src: "{{site.url}}/images/rob_lafeve.jpg"}
           %p Rob lives in Kansas City and works at Cremalab.
+          .links
+            .link 
+              %a.icon.no-text.github{:href => "http://github.com/roblafeve"} Github
+            .link 
+              %a.icon.no-text.twitter{:href => "http://twitter.com/roblafeve"} Twitter
+            .link 
+              %a.icon.no-text.email{:href => "mailto:rob@roblafeve.com"} Email
       .centerCol
       .rightCol
         %aside.postMeta

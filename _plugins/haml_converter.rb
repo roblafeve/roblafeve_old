@@ -1,5 +1,3 @@
-# _plugins/haml_converter.rb
-
 module Jekyll
   class HamlConverter < Converter
     safe true
