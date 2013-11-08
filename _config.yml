@@ -2,7 +2,6 @@ name: Rob LaFeve
 markdown: redcarpet
 pygments: true
 permalink: pretty
-baseurl: /roblafeve
 
 stylus:
   compress: true
