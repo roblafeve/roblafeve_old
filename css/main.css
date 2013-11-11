@@ -1,0 +1,63 @@
+@font-face{font-family:'icomoon';src:url("../fonts/icomoon.eot");src:url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#entypo") format('svg');font-weight:normal;font-style:normal}
+.layout-scaffold,.links{display:table;table-layout:fixed;width:100%;}
+.layout-scaffold > *,.links > *{vertical-align:top;display:table-cell}
+img,p,.links{margin-top:1.5em}
+@media (max-width: 40em){h1{font-size:1.7623416832000005em;margin:1.2710361568096624em 0 0 !important}
+h2{font-size:1.5735193600000004em;margin:1.423560495626822em 0 0 !important}
+h3{font-size:1.4049280000000004em;margin:1.5943877551020404em 0 0 !important}
+h4{font-size:1.2544000000000002em;margin:1.7857142857142856em 0 0 !important}
+h5{font-size:1.12em;margin:2em 0 0 !important}
+h6{font-size:1em;margin:2.24em 0 0 !important}
+}@media (min-width: 40em){h1{font-size:2.48832em;margin:.9645061728395062em 0 0 !important}
+h2{font-size:2.0736em;margin:1.1574074074074074em 0 0 !important}
+h3{font-size:1.728em;margin:1.3888888888888888em 0 0 !important}
+h4{font-size:1.44em;margin:1.6666666666666667em 0 0 !important}
+h5{font-size:1.2em;margin:2em 0 0 !important}
+h6{font-size:1em;margin:2.4em 0 0 !important}
+}h1,h2,h3,h4,h5,h6{font-weight:700;letter-spacing:.075em;line-height:1.275em}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin-bottom:0;}
+*:first-child{margin-top:0 !important}
+aside.about{width:100%;min-width:15em;padding:2em;color:#fff;text-align:center}
+aside.postMeta{color:#fff;text-align:center}
+body{position:absolute;font:112.5%/1.75 'Merriweather',serif;font-weight:400;-webkit-font-smoothing:antialiased;margin:0;height:100%}
+header{padding-top:40%;background:#333}
+img{display:inline-block;line-height:0;max-width:100%;}
+img.avatar{border-radius:500px;width:50%}
+main{max-width:20em;margin:0 auto;background:#fff}
+section.content{padding:10%}
+span.hiddenText{display:none}
+.homeButton{-webkit-animation-name:homeButton;-webkit-animation-duration:1.5s;-webkit-animation-timing-function:ease;display:block;color:#fff;left:0;right:0;text-align:center;}
+.homeButton a{text-decoration:none}
+@-moz-keyframes homeButton{0%{max-height:0;opacity:0;margin-bottom:-40px}
+100%{max-height:40px;opacity:1;margin-bottom:0}
+}@-webkit-keyframes homeButton{0%{max-height:0;opacity:0;margin-bottom:-40px}
+100%{max-height:40px;opacity:1;margin-bottom:0}
+}@-o-keyframes homeButton{0%{max-height:0;opacity:0;margin-bottom:-40px}
+100%{max-height:40px;opacity:1;margin-bottom:0}
+}@-ms-keyframes homeButton{0%{max-height:0;opacity:0;margin-bottom:-40px}
+100%{max-height:40px;opacity:1;margin-bottom:0}
+}@keyframes homeButton{0%{max-height:0;opacity:0;margin-bottom:-40px}
+100%{max-height:40px;opacity:1;margin-bottom:0}
+}.icon:before{font-family:"icomoon"}
+.icon.github:before{content:""}
+.icon.twitter:before{content:""}
+.icon.rdio:before{content:""}
+.icon.email:before{content:""}
+.icon.posts:before{content:""}
+.layout-scaffold > *{transition:all .5s ease-in-out}
+.layout-scaffold.sub-primary{height:100%;z-index:-1;}
+.layout-scaffold.sub-primary .layout-scaffold-main{position:relative;z-index:1;overflow:auto}
+.layout-scaffold.sub-secondary{position:fixed;z-index:0;height:100%;top:0;bottom:0;background:url("../images/background.jpg");background-size:cover;}
+.layout-scaffold.sub-secondary .layout-scaffold-sidebar{z-index:1}
+.layout-scaffold-sidebar{position:relative;width:15em;height:100%;}
+@media (max-width: 60em){.layout-scaffold-sidebar{width:0}
+}.layout-scaffold-main{width:65%;}
+@media (max-width: 60em){.layout-scaffold-main{width:100%}
+}@media (min-width: 100em){.layout-scaffold-main{width:50%}
+}.layout-scaffold-meta{width:5em;}
+@media (max-width: 60em){.layout-scaffold-meta{width:0}
+}.layout-scroll{position:relative;width:100%;height:100%;overflow:auto;}
+.layout-scroll.sub-bottom .layout-scroll-b{vertical-align:middle}
+.layout-scroll-a{position:absolute;display:table;width:100%;height:100%}
+.layout-scroll-b{display:table-cell}
+.links a{color:#fff;text-decoration:none}
